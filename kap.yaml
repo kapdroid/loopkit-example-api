@@ -1,0 +1,7 @@
+version: 1
+tier: S
+trunk: main
+adapters:
+- rust
+kernel_version: 0.0.0
+projects: []

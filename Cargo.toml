@@ -1,0 +1,9 @@
+# Scaffold dropped by `kap new` for a rust project — a minimal, gate-green starting point.
+# Standalone (`[workspace]`) so it does not join a parent workspace.
+[package]
+name = "app"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[workspace]
