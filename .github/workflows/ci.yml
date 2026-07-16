@@ -13,3 +13,16 @@ jobs:
         with:
           components: clippy, rustfmt
       - run: cargo fmt --check && cargo clippy --all-targets -- -D warnings && cargo test
+
+  # docs-lint (AIhiAI/doc-linter) — SELF-SKIPS without the private binary; wire a DOCLINTER_PAT to enforce.
+  docs-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: docs-lint (self-skips if the private binary is absent)
+        run: |
+          if ! command -v doc-linter >/dev/null 2>&1; then
+            echo "::warning:: doc-linter not installed — skipping (private external tool)"
+            exit 0
+          fi
+          doc-linter check

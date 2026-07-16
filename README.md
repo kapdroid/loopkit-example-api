@@ -1,3 +1,13 @@
+---
+id: readme
+role: index
+title: "loopkit-example-api"
+summary: "Single-stack (Rust) loopkit proof repo — adopted with kap adopt; the rust gate is the definition of done."
+status: stable
+updated: 2026-07-16
+covers: [endpoint]
+---
+
 # loopkit-example-api
 
 A **single-stack (Rust)** proof repo for [loopkit](https://github.com/kapdroid/loopkit) — an existing

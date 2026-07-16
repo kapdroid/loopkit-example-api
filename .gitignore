@@ -1,2 +1,4 @@
 .beads/events.jsonl
 target/
+.doc-lint/
+docs/sitemap.json
